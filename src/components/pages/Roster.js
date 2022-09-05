@@ -13,6 +13,7 @@ function Roster() {
     <div className='imp-body'>
       <Helmet>
         <meta charSet='utf-8' />
+        <meta name='Roster Page' content='Roster' />
         <title>Roster</title>
         <link rel='canonical' href='/homepage' />
       </Helmet>
