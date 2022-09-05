@@ -47,7 +47,10 @@ function Homepage() {
     <div className='main-body'>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Homepage</title>
+        <meta name='HOME| Page' content='HOME' />
+        <meta name='theme-color' content='This is DV Hompeage' />
+
+        <title>Roster</title>
         <link rel='canonical' href='/homepage' />
       </Helmet>
       <div className='imp-body'>

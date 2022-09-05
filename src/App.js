@@ -19,6 +19,7 @@ import FooterOne from './components/pages/FooterOne';
 import PlayerStatusTwo from './components/pages/PlayerStatusTwo';
 import { AppContext } from './context';
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [data, setData] = useState([]);
@@ -40,6 +41,7 @@ function App() {
         <AppContext.Provider value={{ data }}>
           <Router>
             <Header />
+
             <Menu />
             <Routes>
               <Route path='/' element={<Homepage />} />
