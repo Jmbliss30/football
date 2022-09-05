@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { NavLink, Link, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import PlayerStatus from './PlayerStatus';
 import { AppContext } from '../../context';
@@ -10,6 +11,11 @@ function Roster() {
   console.log('this is data --->', data);
   return (
     <div className='imp-body'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Roster</title>
+        <link rel='canonical' href='/homepage' />
+      </Helmet>
       <div id='main-body'>
         <div className='rost'>
           <div className='container-posts'>

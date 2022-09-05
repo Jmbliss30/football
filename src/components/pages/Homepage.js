@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
+import { Helmet } from 'react-helmet';
 
 function Homepage() {
   const responsive = {
@@ -44,6 +45,11 @@ function Homepage() {
 
   return (
     <div className='main-body'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Homepage</title>
+        <link rel='canonical' href='/homepage' />
+      </Helmet>
       <div className='imp-body'>
         <div id='main-body'>
           <div className='full-bg'>

@@ -684,6 +684,9 @@ td a {
     width: 70px;
     height: 70px;
 }
+.mstw-tr-table, .mstw-tr-table tr, .mstw-tr-table td, .mstw-tr-table tbody {
+  display: block !important;
+}
 thead{
   display: none;
 }
@@ -701,6 +704,7 @@ tr{
   text-align: center;
   background: url('../images/bg-back.jpg') no-repeat center center !important;
   background-size: cover;
+  height: 135px;
 }
 tbody tr:nth-child(odd) {
   background: transparent !important;
@@ -724,6 +728,8 @@ tbody tr:nth-child(odd) {
 }
 
 }
+
+
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
   
@@ -814,6 +820,8 @@ tbody tr:nth-child(odd) {
   padding: 10px;
   font-family: 'Titillium Web';
   font-size: 12px;
+  width: 410px;
+  text-align: center;
 }
 .title {
   margin-bottom: 23px;
@@ -831,6 +839,50 @@ tbody tr:nth-child(odd) {
   vertical-align: middle;
   padding-left: 0px;
   font-size: 14px;
+}
+.mstw-tr-table td:nth-child(2):before {
+  content: "Name";
+}
+
+.mstw-tr-table td:before {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+  .mstw-tr-table_Teamone.tr-table tbody tr td {
+    padding: 10px;
+    font-family: 'Titillium Web';
+    font-size: 12px;
+    width: 350px;
+    text-align: center;
+}
+
+}
+@media only screen and (min-width: 200px) and (max-width: 360px) {
+  .mstw-tr-table_Teamone.tr-table tbody tr td {
+    padding: 10px;
+    font-family: 'Titillium Web';
+    font-size: 12px;
+    width: 280px;
+    text-align: center;
+}
+
+}
+@media only screen and (min-width: 200px) and (max-width: 301px) {
+  .mstw-tr-table_Teamone.tr-table tbody tr td {
+    padding: 10px;
+    font-family: 'Titillium Web';
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
 }
 
 }
